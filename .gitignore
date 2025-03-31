@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.idea/
+env.yaml
+uploads/
+coverage/
+intergrations/*/data
+src/tests
+yarn.lock
+version.json
+.DS_Store
