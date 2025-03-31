@@ -1,0 +1,15 @@
+{
+  "name": "car-dragrace-spec",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Dmytro Riazanov <kak2z0079803@gmail.com>",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "ts-jest": "^29.3.0"
+  }
+}
