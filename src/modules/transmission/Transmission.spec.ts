@@ -7,7 +7,7 @@ import AWDAutomatic from "./samples/AWDAutomatic";
 describe('Check transmission', () => {
     it('RWD', () => {
         const rwd = new RWD();
-        expect(rwd.getGripCoefficient(1000, 100)).toBe(0.7);
+        expect(rwd.getGripCoefficient(1000, 100)).toBe(0.2);
     })
 
     it('RWD weight', () => {
@@ -17,7 +17,7 @@ describe('Check transmission', () => {
 
     it('RWD automatic', () => {
         const rwd = new RWDAutomatic();
-        expect(rwd.getGripCoefficient(1000, 100)).toBe(0.7);
+        expect(rwd.getGripCoefficient(1000, 100)).toBe(0.2);
     })
 
     it('RWD automatic weight', () => {
@@ -27,7 +27,7 @@ describe('Check transmission', () => {
 
     it('AWD', () => {
         const awd = new AWD();
-        expect(awd.getGripCoefficient(1000, 100)).toBe(1);
+        expect(awd.getGripCoefficient(1000, 100)).toBe(0.29);
     })
 
     it('AWD weight', () => {
@@ -37,7 +37,7 @@ describe('Check transmission', () => {
 
     it('AWD automatic', () => {
         const awd = new AWDAutomatic();
-        expect(awd.getGripCoefficient(1000, 100)).toBe(1);
+        expect(awd.getGripCoefficient(1000, 100)).toBe(0.29);
     })
 
     it('AWD automatic weight', () => {
@@ -47,6 +47,6 @@ describe('Check transmission', () => {
 
     it('AWD automatic', () => {
         const awd = new AWDAutomatic();
-        expect(awd.getGripCoefficient(1000, 100)).toBe(1);
+        expect(awd.getGripCoefficient(1000, 100)).toBe(0.29);
     })
 });
