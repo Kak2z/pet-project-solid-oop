@@ -6,14 +6,14 @@ abstract class AbstractPetrolEngine extends AbstractEngine {
     private readonly _volume: number;
     private readonly _hasTurbo: boolean;
     private readonly _oilLevel: number;
-    private readonly coolantLevel: number;
+    private readonly _coolantLevel: number;
 
     protected constructor(volume: number, hasTurbo: boolean, oilLevel: number, coolantLevel: number) {
         super('petrol');
         this._volume = volume;
         this._hasTurbo = hasTurbo;
         this._oilLevel = oilLevel;
-        this.coolantLevel = coolantLevel;
+        this._coolantLevel = coolantLevel;
 
         if (oilLevel < volume) {
             throw new Error('Oil level must be equal to the engine volume');
@@ -32,7 +32,7 @@ abstract class AbstractPetrolEngine extends AbstractEngine {
     }
 
     getWeight(): number {
-        return this._volume * 150 + this._oilLevel + this.coolantLevel + (this._hasTurbo ? 50 : 0);
+        return this._volume * 150 + this._oilLevel + this._coolantLevel + (this._hasTurbo ? 50 : 0);
     }
 
     getStats(): string {
